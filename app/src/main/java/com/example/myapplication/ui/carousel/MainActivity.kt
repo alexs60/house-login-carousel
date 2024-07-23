@@ -1,9 +1,8 @@
-package com.example.myapplication.ui
+package com.example.myapplication.ui.carousel
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.helper.widget.Carousel
@@ -31,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         var myAdapter = MyAdapter()
 
         binding.carousel.setAdapter(myAdapter)
-
         binding.carousel.jumpToIndex(0)
 
     }
